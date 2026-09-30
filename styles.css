@@ -45,7 +45,6 @@ a {
   text-decoration: none;
 }
 
-/* ---------- 2. Buttons ---------- */
 .btn {
   display: inline-block;
   padding: 8px 16px;
@@ -95,7 +94,6 @@ a {
   transform: translateY(-2px);
 }
 
-/* ---------- 3. Sidebar ---------- */
 .menu-toggle {
   display: none;
 }
@@ -148,7 +146,6 @@ a {
   text-align: left;
 }
 
-/* Jeans dropdown (details / summary) */
 .dropdown summary {
   display: block;
   width: 100%;
@@ -190,7 +187,6 @@ a {
   padding: 8px 16px;
 }
 
-/* ---------- 4. Top bar and overlay (small screens) ---------- */
 .topbar {
   display: none;
   position: fixed;
@@ -221,10 +217,10 @@ a {
   inset: 0;
   z-index: 2;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: oldlace;
 }
 
-/* ---------- 5. Main content ---------- */
+
 .content {
   margin-left: 250px;
 }
@@ -277,7 +273,6 @@ a {
   color: #9e9e9e;
 }
 
-/* ---------- 7. Product grid ---------- */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -292,7 +287,7 @@ a {
 
 .product:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  box-shadow:#9e9e9e
 }
 
 .product-img {
@@ -314,7 +309,7 @@ a {
   left: 0;
   padding: 0 8px;
   color: #fff;
-  background-color: #000;
+  background-color:#ccc;
 }
 
 .buy {
@@ -334,14 +329,12 @@ a {
   color: #f44336;
 }
 
-/* ---------- 8. Subscribe ---------- */
 .subscribe {
   padding: 32px 16px;
   color: #fff;
-  background-color: #000;
+  background-color:#f1f1f1
 }
 
-/* ---------- 9. Inputs ---------- */
 input {
   display: block;
   width: 100%;
@@ -351,7 +344,6 @@ input {
   font-size: inherit;
 }
 
-/* ---------- 10. Footer ---------- */
 .footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -391,10 +383,9 @@ input {
   padding: 24px;
   text-align: center;
   color: #fff;
-  background-color: #000;
+  background-color:gray;
 }
 
-/* ---------- 11. Newsletter popup ---------- */
 .modal {
   display: none;
   position: fixed;
@@ -405,7 +396,7 @@ input {
   z-index: 4;
   padding-top: 100px;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color :#f1f1f1;
 }
 
 .modal:target {
@@ -448,7 +439,6 @@ input {
   to   { transform: scale(1); }
 }
 
-/* ---------- 12. Responsive ---------- */
 
 /* Tablet and phone: sidebar becomes a slide-in menu */
 @media (max-width: 992px) {
@@ -478,7 +468,6 @@ input {
   }
 }
 
-/* Phone */
 @media (max-width: 600px) {
   .hero-title {
     font-size: 36px;
