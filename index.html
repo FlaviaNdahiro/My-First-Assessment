@@ -3,21 +3,210 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Clothing Store</title>
+  <title>Clothing Store</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="#" class="logo">BRAND</a>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+  <!-- Sidebar -->
+  <nav class="sidebar">
+    <div class="sidebar-top">
+      <label for="menu-toggle" class="close-btn">&times;</label>
+      <h3 class="logo">LOGO</h3>
+    </div>
+
+    <div class="menu-links">
+      <a href="#" class="btn">Shirts</a>
+      <a href="#" class="btn">Dresses</a>
+
+      <details class="dropdown">
+        <summary>Jeans <i class="fa fa-caret-down"></i></summary>
+        <div class="submenu">
+          <a href="#" class="btn active"><i class="fa fa-caret-right"></i> Skinny</a>
+          <a href="#" class="btn">Relaxed</a>
+          <a href="#" class="btn">Bootcut</a>
+          <a href="#" class="btn">Straight</a>
+        </div>
+      </details>
+
+      <a href="#" class="btn">Jackets</a>
+      <a href="#" class="btn">Gymwear</a>
+      <a href="#" class="btn">Blazers</a>
+      <a href="#" class="btn">Shoes</a>
+    </div>
+
+    <div class="menu-extra">
+      <a href="#footer" class="btn">Contact</a>
+      <a href="#newsletter" class="btn">Newsletter</a>
+      <a href="#footer" class="btn">Subscribe</a>
+    </div>
+  </nav>
+
+  <!-- Top bar (small screens only) -->
+  <header class="topbar">
+    <div class="topbar-logo">LOGO</div>
+    <label for="menu-toggle" class="burger"><i class="fa fa-bars"></i></label>
   </header>
 
-  
+  <label for="menu-toggle" class="overlay"></label>
+
+  <!-- Page content -->
+  <main class="content">
+
+    <header class="page-header">
+      <p>Jeans</p>
+      <p class="header-icons">
+        <i class="fa fa-shopping-cart"></i>
+        <i class="fa fa-search"></i>
+      </p>
+    </header>
+
+    <section class="hero">
+      <img src="jeans.jpg" alt="Jeans">
+      <div class="hero-text">
+        <h1 class="hero-title">New arrivals</h1>
+        <h1 class="hero-collection">COLLECTION 2016</h1>
+        <p><a href="#jeans" class="btn btn-black btn-large">SHOP NOW</a></p>
+      </div>
+    </section>
+
+    <div class="items" id="jeans">
+      <p>8 items</p>
+    </div>
+
+    <section class="product-grid">
+
+      <article class="product">
+        <img src="jeans1.jpg" alt="Ripped Skinny Jeans">
+        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+      </article>
+
+      <article class="product">
+        <img src="jeans2.jpg" alt="Mega Ripped Jeans">
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+      </article>
+
+      <article class="product">
+        <div class="product-img">
+          <img src="jeans2.jpg" alt="Mega Ripped Jeans">
+          <span class="tag">New</span>
+          <div class="buy">
+            <button class="btn btn-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+      </article>
+
+      <article class="product">
+        <img src="jeans3.jpg" alt="Washed Skinny Jeans">
+        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+      </article>
+
+      <article class="product">
+        <img src="jeans3.jpg" alt="Washed Skinny Jeans">
+        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+      </article>
+
+      <article class="product">
+        <div class="product-img">
+          <img src="jeans4.jpg" alt="Vintage Skinny Jeans">
+          <span class="tag">Sale</span>
+          <div class="buy">
+            <button class="btn btn-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Vintage Skinny Jeans<br><b class="text-red">$14.99</b></p>
+      </article>
+
+      <article class="product">
+        <img src="jeans4.jpg" alt="Vintage Skinny Jeans">
+        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+      </article>
+
+      <article class="product">
+        <img src="jeans1.jpg" alt="Ripped Skinny Jeans">
+        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+      </article>
+
+    </section>
+
+    <!-- Subscribe -->
+    <section class="subscribe">
+      <h1>Subscribe</h1>
+      <p>To get special offers and VIP treatment:</p>
+      <p><input type="email" placeholder="Enter e-mail"></p>
+      <button type="button" class="btn btn-red">Subscribe</button>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+
+      <div>
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="#">
+          <p><input type="text" placeholder="Name" name="Name" required></p>
+          <p><input type="email" placeholder="Email" name="Email" required></p>
+          <p><input type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="btn btn-black btn-block">Send</button>
+        </form>
+      </div>
+
+      <div>
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="footer-store">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <p class="social">
+          <i class="fa fa-facebook-official"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-snapchat"></i>
+          <i class="fa fa-pinterest-p"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin"></i>
+        </p>
+      </div>
+
+    </footer>
+
+    <div class="copyright">&copy; 2026 Clothing Store</div>
+
+  </main>
+
+  <!-- Newsletter popup (opens with #newsletter, closes with #) -->
+  <div id="newsletter" class="modal">
+    <div class="modal-box">
+      <div class="modal-inner">
+        <a href="#" class="modal-close">&times;</a>
+        <h2>NEWSLETTER</h2>
+        <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+        <p><input type="email" placeholder="Enter e-mail"></p>
+        <a href="#" class="btn btn-red btn-large-pad">Subscribe</a>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
